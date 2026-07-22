@@ -85,3 +85,36 @@ The following validation checks were completed successfully:
 ### Result
 
 The server was successfully promoted to the first Domain Controller for the **novatech.local** forest and is now providing centralized identity and DNS services.
+
+---
+
+## Phase 3: Active Directory Organizational Unit Design
+
+### Objective
+
+Create an enterprise OU structure for NovaTech Solutions to support identity management and future Group Policy deployment.
+
+### Organizational Units Created
+
+Administrative:
+- _ADM
+
+Users:
+- Executive
+- Human Resources
+- Finance
+- Information Technology
+- Sales
+- Marketing
+
+Computers:
+- Workstations
+- Servers
+
+Groups:
+- Security Groups
+- Distribution Groups
+
+### Status
+
+Completed successfully.
