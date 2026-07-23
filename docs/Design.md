@@ -1,15 +1,66 @@
 # Active Directory Design
 
-## Organizational Unit Structure
+## Overview
 
-The NovaTech Solutions Active Directory environment uses a custom Organizational Unit (OU) structure instead of relying on default Active Directory containers.
+The NovaTech Solutions identity environment uses Microsoft Active Directory Domain Services (AD DS) to provide centralized authentication, authorization, and identity management.
 
-The design separates users, computers, administrative accounts, and groups to support future Group Policy implementation and delegated administration.
+The Active Directory environment consists of:
+
+- Forest: novatech.local
+- Domain: novatech.local
+- Domain Controller: DC01
+
+---
+
+# Organizational Unit Design
+
+The environment uses custom Organizational Units (OUs) instead of relying on default Active Directory containers.
+
+This design separates users, computers, administrative accounts, and groups to support:
+
+- Better organization of objects
+- Future Group Policy targeting
+- Delegated administration
+- Scalable identity management
 
 ## OU Structure
 
 
+---
 
-## Design Rationale
+# Design Decisions
 
-Custom OUs were created to allow future application of Group Policy Objects (GPOs), simplify administration, and provide a scalable structure for the organization.
+## User Separation
+
+Users are separated by department to allow future application of department-specific policies.
+
+Example:
+
+Finance users may later receive:
+
+- Finance drive mappings
+- Additional security restrictions
+- Finance application access
+
+## Computer Separation
+
+Computers are separated into Workstations and Servers to allow different security policies.
+
+## Group Separation
+
+Security groups and distribution groups are separated because they serve different purposes.
+
+### Security Groups
+
+Used for:
+
+- Permissions
+- Resource access
+- Application access
+
+### Distribution Groups
+
+Used for:
+
+- Communication lists
+- Email organization
