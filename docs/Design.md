@@ -64,3 +64,33 @@ Used for:
 
 - Communication lists
 - Email organization
+
+
+---
+
+# Security Group Design
+
+## Overview
+
+NovaTech Solutions uses role-based security groups to manage access permissions.
+
+Users will be assigned to department-based security groups rather than receiving permissions directly.
+
+## Security Groups Created
+
+| Group | Purpose |
+|---|---|
+| GG-Executive-Users | Executive department users |
+| GG-HR-Users | Human Resources users |
+| GG-Finance-Users | Finance department users |
+| GG-IT-Users | Information Technology users |
+| GG-Sales-Users | Sales department users |
+| GG-Marketing-Users | Marketing department users |
+
+## Group Design Principles
+
+The environment follows the principle:
+
+Users → Groups → Permissions
+
+This approach simplifies administration, improves security management, and allows future delegation.

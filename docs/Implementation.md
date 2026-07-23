@@ -118,3 +118,57 @@ Groups:
 ### Status
 
 Completed successfully.
+
+---
+
+# Phase 4 — Security Group Creation
+
+## Objective
+
+Create department-based security groups to support role-based access control.
+
+## Groups Created
+
+- GG-Executive-Users
+- GG-HR-Users
+- GG-Finance-Users
+- GG-IT-Users
+- GG-Sales-Users
+- GG-Marketing-Users
+
+## Configuration
+
+Group Scope:
+- Global
+
+Group Type:
+- Security
+
+## Status
+
+Completed successfully.
+
+
+## Phase 4 — User Account Deployment
+
+Created departmental test users:
+
+- Anna Kowalski — Executive
+- Maria Nowak — Human Resources
+- Adam Wojcik — Finance
+- Piotr Zielinski — Information Technology
+- Kasia Lewandowska — Sales
+- Tomasz Mazur — Marketing
+
+Users were assigned to role-based security groups:
+
+- GG-Executive-Users
+- GG-HR-Users
+- GG-Finance-Users
+- GG-IT-Users
+- GG-Sales-Users
+- GG-Marketing-Users
+
+Group-based access control follows the principle:
+
+Users → Groups → Permissions
